@@ -1,7 +1,4 @@
 Rails.application.routes.draw do
-  get 'users/top'
-  get 'books/top'
-  get 'homes/top'
   devise_for :users, controllers: {
     sessions: 'devise/sessions',
     registrations: 'devise/registrations'
