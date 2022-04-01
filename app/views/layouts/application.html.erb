@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Bookers</title>
+    <title>Bookers2</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
-  
+
   <body class="header">
     <header class="navbar navbar-fixed-top navbar-inverse">
       <div class="container">
@@ -63,28 +63,16 @@
         </nav>
       </div>
     </header>
-    
     <div class="body">
       <p class="notice"><%= notice %></p>
-    </div>
-
-      <% flash.each do |key, value| %>
-    <%= content_tag(:div, value, class: "#{key}") %>
-  <% end %>
 
       <%= yield %>
 
 
-       <footer>
-       
-         <div class="container mt-5">
-          <div class="row">
-           <div class="mx-auto">
-            <p class="text-right"> CopyRight Infratop.inc</p>
-           </div>
-          </div>
-         </div>
-         
-       </footer>
+        <footer>
+          <p class="text-right"> CopyRight Infratop.inc</p>
+        </footer>
+      </div>
+    </div>
   </body>
 </html>

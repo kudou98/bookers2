@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  devise_for :users, controllers: {
+devise_for :users, controllers: {
     sessions: 'devise/sessions',
     registrations: 'devise/registrations'
   }
@@ -9,5 +9,5 @@ Rails.application.routes.draw do
   get "/home/about" => "homes#about"
   resources :users
   resources :books
-  # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
+  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
