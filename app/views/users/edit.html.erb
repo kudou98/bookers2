@@ -1,3 +1,4 @@
+<p id="notice"></p>
 <div class="container">
   <div class="row">
     <div class="col-sm-12 col-md-8 col-lg-5 px-5 px-sm-0 mx-auto">
@@ -13,8 +14,8 @@
       <%= f.attachment_field :profile_image %>
      <div class="form-body">Introduction</div>
       <%= f.text_area :introduction %><br>
-     <div class="upload">
-      <%= f.submit " Update User" %>
+     <div class="form-group">
+      <input type="submit" name="commit" value="Update User" class="btn btn-secondary" data-disable-with="Update User">
      </div>
     <% end %>
 
