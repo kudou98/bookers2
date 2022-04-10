@@ -17,7 +17,7 @@
   	  	  <% @users.each do |user| %>
 	  	  	<tr>
 	  	  	  
-	  	  	  <td><%= attachment_image_tag user, :profile_image, :fill, 50, 50,fallback: "no_image.jpg"%></td>
+	  	  	  <%= image_tag user.get_profile_image(100,100) %>
 	  	  	  
 	  	  	  <td><%= user.name %></td>
 	  	  	  <td><%= link_to "Show", "/users/#{user.id}" %></td>
