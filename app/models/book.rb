@@ -6,6 +6,8 @@ class Book < ApplicationRecord
   validates :body, presence: true, length: { maximum: 200}
   
   attachment :profile_image
+  
+  has_one_attached :profile_image
 
   
 end
